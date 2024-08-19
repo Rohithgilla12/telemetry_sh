@@ -1,0 +1,13 @@
+name: example
+description: An example of mocktail usage
+publish_to: none
+
+environment:
+  sdk: "^3.3.0"
+
+dependencies:
+  http: ^1.2.2
+
+dev_dependencies:
+  telemetry_sh:
+    path: ../
