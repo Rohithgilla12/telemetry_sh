@@ -17,6 +17,38 @@ dart pub add telemetry_sh
 ```
 
 ---
+## Features
+
+- Log data to specific tables.
+- Query telemetry data using SQL queries.
+- Simple and easy-to-use interface.
+- Supports additional parameters for customization.
+---
+
+## Usage 🚀
+
+**1. Import the package**
+```dart
+import 'package:telemetry_sh/telemetry_sh.dart';
+```
+
+**2. Initialize the Telemetry Sh instance**
+```dart
+final telemetry = TelemetrySh('YOUR_API_KEY');
+```
+
+**3. Log data to a table**
+```dart
+await telemetry.log('table_name', {'key': 'value'});
+```
+
+**4. Query telemetry data**
+```dart
+final data = await telemetry.query('SELECT * FROM table_name');
+```
+
+
+---
 
 ## Continuous Integration 🤖
 
